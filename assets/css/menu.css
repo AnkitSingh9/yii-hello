@@ -1,0 +1,58 @@
+#menu
+{
+-moz-padding-start: 0px;
+width:430px;
+
+height:40px;
+background-color: #111;
+list-style:none;
+border-radius: 8px;
+margin:0 auto;
+box-shadow:0px 5px 5px #4e4e4e;
+}
+#menu li
+{
+float:left;
+color:#fff;
+margin-left: 15px;
+line-height:40px;
+}
+#menu li a
+{
+border-radius:25px;
+padding:8px;
+text-decoration:none;
+color:#fff;
+}
+#menu li:hover
+{
+background-color:#8AC007;
+transition:1s ease-in-out;
+transform:rotate(360deg);
+
+color:black;
+}
+#menu li #menu-drop
+{
+-moz-padding-start: 0px;
+list-style:none;
+background-color:#111;
+display:none;
+position:absolute;width:105px;
+}
+#menu li #menu-drop li
+{
+float:none;
+margin:0 auto;
+cursor:crosshair;
+}
+#menu li #menu-drop li a
+{
+cursor:crosshair;
+border-radius:0px;
+}
+#menu li:hover #menu-drop
+{
+cursor:crosshair;
+display:block;
+}
