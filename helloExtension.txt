@@ -1,0 +1,27 @@
+Step 1 => create a new project of yii 2 basic template either through composer or through zip file
+
+Step 2 => open composer.json of your new project and copy paste the code
+
+"repositories":[{
+  					"type" :"git",
+  					"url": "https://github.com/AnkitSingh9/yii-hello.git"
+  				}],
+				
+Step 3 =>	"minimum-stability": "stable",  //This line might be already present in your composer.json file
+			"minimum-stability": "dev", 	//replace by this
+			
+Step 4 => open command prompt and traverse inside your project's root directory
+
+Step 5 => composer require --prefer-dist cedcoss/yii2-hello "*"  //run this command
+
+If the step 5 get completed successfully visit your vendor directory it must have directory named cedcoss
+
+Step 6 => Go to the <your project>/views/site/index.php and put this code
+
+use cedcoss\yii2hello\AutoloadExample; //at the top of the page
+
+<h1><?= AutoloadExample::widget(); ?></h1> //at the place where you want to print hello  and check it in your browser
+
+
+Most Important Step 8 => if you found it impressive work ,please say "good job! ANKIT well done keep it up :)"
+
