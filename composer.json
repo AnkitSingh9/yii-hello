@@ -1,0 +1,21 @@
+{
+    "name": "cedcoss/yii2-hello",
+    "description": "This is a test Extension",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension"],
+    "license": "BSD-2-Clause",
+    "authors": [
+        {
+            "name": "ankit singh chauhan",
+            "email": "ankitsinghchauhan@cedcoss.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "cedcoss\\yii2hello\\": ""
+        }
+    }
+}
