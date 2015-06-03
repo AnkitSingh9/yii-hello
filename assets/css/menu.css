@@ -1,58 +1,71 @@
-#menu
+#ced-menu
 {
 -moz-padding-start: 0px;
-width:430px;
-
+width:100%;
+position:fixed;
 height:40px;
 background-color: #111;
 list-style:none;
-border-radius: 8px;
-margin:0 auto;
 box-shadow:0px 5px 5px #4e4e4e;
+z-index:500;
+text-transform:uppercase;
+font-family:sans;
+font-size:14px;
 }
-#menu li
+
+#ced-menu li
 {
 float:left;
 color:#fff;
 margin-left: 15px;
 line-height:40px;
 }
-#menu li a
+
+#ced-menu li a
 {
-border-radius:25px;
 padding:8px;
 text-decoration:none;
 color:#fff;
 }
-#menu li:hover
-{
-background-color:#8AC007;
-transition:1s ease-in-out;
-transform:rotate(360deg);
 
-color:black;
+.me{
+	background-color:#d00 !important;
 }
-#menu li #menu-drop
+
+#ced-menu li:hover
+{
+background-color:#d00;/* #9bce1e 8AC007*/
+transition:0.7s ease-in-out;
+}
+
+#ced-menu li #menu-drop
 {
 -moz-padding-start: 0px;
 list-style:none;
 background-color:#111;
 display:none;
-position:absolute;width:105px;
+margin:0 auto;
+min-width:100px;
+position:absolute;
 }
-#menu li #menu-drop li
+
+#ced-menu li #menu-drop li
 {
 float:none;
 margin:0 auto;
 cursor:crosshair;
+/* text-align:center; */
 }
-#menu li #menu-drop li a
+
+#ced-menu li #menu-drop li a
 {
 cursor:crosshair;
-border-radius:0px;
+color:white;
 }
-#menu li:hover #menu-drop
+
+#ced-menu li:hover #menu-drop
 {
+transition:0.8s ease-in-out;
 cursor:crosshair;
 display:block;
 }

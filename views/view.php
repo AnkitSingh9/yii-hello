@@ -3,19 +3,13 @@ namespace cedcoss\yii2hello\views;
 use Yii;
 
 ?>
-<link href="<?= Yii::$app->getUrlManager()->getBaseUrl() ?>/../vendor/cedcoss/yii2-hello/assets/css/menu.css" rel="stylesheet">
 
-<ul id="menu">
-	<li><a href=#>Home</a></li>
-	<li><a href=#>About Us</a></li>
-	<li><a href=#>Career</a></li>
-	<li><a href=#>Contact Us</a>
-	<ul id="menu-drop">
-			<li><a href=#>Home</a></li>
-			<li><a href=#>About Us</a></li>
-			<li><a href=#>Career</a></li>
-		</ul></li>
+<link href="<?= Yii::$app->request->BaseUrl ?>/../vendor/cedcoss/yii2-hello/assets/css/menu.css" rel="stylesheet">
+
+<ul id="ced-menu">
+
+<?= $menu ?>
+
 </ul>
-
-<h1>Hello Everyone this is testing extension</h1>
-
+<br><br><br>
+<!-- <h1>Hello Everyone this testing extension</h1> -->
