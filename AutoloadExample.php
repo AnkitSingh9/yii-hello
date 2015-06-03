@@ -9,6 +9,8 @@ class AutoloadExample extends \yii\base\Widget
 {
     public function run()
     {
-        return "Hello Everyone!<br> This is my First Extension Code...";
+    	$msg = "Hello Everyone!<br> Try this also <br>";
+    	$msg.= "use cedcoss/yii2hello/NewLoad <br> and use NewLoad::widget()";
+        return $msg;
     }
 }

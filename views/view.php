@@ -17,5 +17,5 @@ use Yii;
 		</ul></li>
 </ul>
 
-<h1>Hello Everyone this testing extension</h1>
+<h1>Hello Everyone this is testing extension</h1>
 
