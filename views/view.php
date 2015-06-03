@@ -3,7 +3,7 @@ namespace cedcoss\yii2hello\views;
 use Yii;
 
 ?>
-
+<link href="<?= Yii::$app->getUrlManager()->getBaseUrl() ?>/../vendor/cedcoss/yii2-hello/assets/css/menu.css" rel="stylesheet">
 
 <ul id="menu">
 	<li><a href=#>Home</a></li>
