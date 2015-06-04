@@ -1,6 +1,6 @@
 Step 1 => create a new project of yii 2 basic template either through composer or through zip file
 
-Step 2 => open composer.json of your new project and copy paste the code
+Step 2 => open composer.json file of your project given under root directory and copy-paste the code given below
 
 "repositories":[{
   					"type" :"git",
@@ -14,14 +14,28 @@ Step 4 => open command prompt and traverse inside your project's root directory
 
 Step 5 => composer require --prefer-dist cedcoss/yii2-hello "*"  //run this command
 
-If the step 5 get completed successfully visit your vendor directory it must have directory named cedcoss
+If the step 5 get completed successfully visit <your project>/vendor directory it must have directory named cedcoss
 
-Step 6 => Go to the <your project>/views/site/index.php and put this code
+Step 6 => Go to the <your project>/views/layouts/main.php and put the below given code
 
-use cedcoss\yii2hello\AutoloadExample; //at the top of the page
+use cedcoss\yii2hello\CedMenu;
 
-<h1><?= AutoloadExample::widget(); ?></h1> //at the place where you want to print hello  and check it in your browser
-
-
-Most Important Step 8 => if you found it impressive work ,please say "good job! ANKIT well done keep it up :)"
-
+echo CedMenu::widget([
+  					'logo'=>'Cedcoss Menu',//Text Logo of your company it will become a link to home page of your site
+			   		'theme'=>'black-red',//there three styles available in this extension black-red,black-green and white-purple by default it will use black-red
+			   		'data'=>[
+			        		['label'=>'Home','url'=>'site/index' ],//'linkOptions'=>['id'=>'CEDCOSS','class'=>'Technologies']], //To use id/class of <a> tag
+			        		['label'=>'About Us', 'url'=>'site/about'],
+			        		['label'=>'Contact', 'url'=>'site/contact'],//'id'=>'CEDCOSS','class'=>'Technologies'], //To use id/class of <li> tag
+			        		Yii::$app->user->isGuest ?
+			        		['label' => 'Login', 'url' =>'site/login'] :
+							['label' => 'Logout (' . Yii::$app->user->identity->username . ')','url' =>'site/logout','linkOptions'=>['method' =>'post']],
+					   		['label'=>'Sub-Menu','data'=>[
+											   			['label'=>'Home','url'=>'/site/index'],
+											   			['label'=>'About Us', 'url'=>'site/about'],
+											   			['label'=>'Home','url'=>'site/index'],
+											   		]
+					   		],
+        		]]);
+				
+Congrats you did it successfully!

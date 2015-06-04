@@ -1,0 +1,75 @@
+.navbar {
+    background-color: #111;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
+}
+
+.dropdown-menu > li > a {
+    color: #fff;
+}
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #fff;
+}
+.ced-menu li a {
+    color: #fff;
+    font-size: 14px!important;
+}
+.dropdown-menu{
+border:none;
+box-shadow:none;
+}
+.menu-drop{
+background-color:#111;
+}
+ .ced-menu li a:hover{
+ background-color:#d00!important;
+transition:0.7s ease-in-out;
+color: #fff!important;
+ }
+ .ced-menu li:hover .menu-drop{
+/* display:block; */
+}
+ .ced-menu li .menu-drop li a:hover{
+  background-color:#d00!important;/* 8AC007*/
+transition:0.7s ease-in-out;
+color: #fff!important;
+ }
+ .navbar-default .navbar-toggle {
+    border-color: transparent;
+}
+ .navbar-default .navbar-toggle:hover{
+ background-color:transparent;
+ }
+ .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: transparent;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #d00;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover {
+    background-color: transparent;
+	color:#fff;
+}
+.navbar-collapse.collapse.in {
+    overflow: hidden;
+}
+
+@media screen and (max-width:768px){
+	
+	.dropdown ul{
+	padding-left:35px;
+	}
+	
+}
+.caret {
+    border-left: 4px solid rgba(0, 0, 0, 0);
+    border-right: 4px solid rgba(0, 0, 0, 0);
+    border-top: 4px solid;
+    display: inline-block;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    width: 0;
+	padding-bottom:5px;
+}
