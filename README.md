@@ -22,18 +22,20 @@ or add
 to the require section of your `composer.json` file.
 
 Important
+---------
+
+The directory structure must be as by default by the framework otherwise you need to set the path in path/to/vendor/cedcoss/yii2-hello/views/view.php at line 7
 
 ```
-The directory structure must be as by default by the framework otherwise you need to set the path in path/to/vendor/cedcoss/yii2-hello/views/view.php at line 7
+$path = Yii::$app->request->baseUrl ."/../vendor/cedcoss/yii2-hello/"; //setup your directory structure here
 ```
-$path = Yii::$app->request->baseUrl ."/../vendor/cedcoss/yii2-hello/";
-```
+
 Usage
 -----
 
 Once the extension is installed, simply use it in your code by  :
 
-```php
+```
 use cedcoss\yii2hello\CedMenu;
    echo CedMenu::widget([
 			   		'theme'=>'white-purple',
