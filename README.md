@@ -21,7 +21,13 @@ or add
 
 to the require section of your `composer.json` file.
 
+Important
 
+```
+The directory structure must be as by default by the framework otherwise you need to set the path in path/to/vendor/cedcoss/yii2-hello/views/view.php at line 7
+```
+$path = Yii::$app->request->baseUrl ."/../vendor/cedcoss/yii2-hello/";
+```
 Usage
 -----
 

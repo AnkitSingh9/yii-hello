@@ -1,19 +1,12 @@
 <?php
-
 namespace cedcoss\yii2hello\views;
 
 use Yii;
 use cedcoss\yii2hello;
 
+$path = Yii::$app->request->baseUrl ."/../vendor/cedcoss/yii2-hello/";
 ?>
-   <?php
-
-$path = Yii::$app->basePath;
-
-$path = substr ( $path, strrpos ( $path, '/' ) );
-
-?>
-<link href="<?= $path ?>/vendor/cedcoss/yii2-hello/assets/css/<?= $theme ?>.css" rel="stylesheet">
+<link href="<?= $path ?>assets/css/<?= $theme ?>.css" rel="stylesheet">
 <nav class="navbar navbar-default navbar-fixed-top">
 	<div class="container">
 		<div class="navbar-header">
@@ -33,6 +26,6 @@ $path = substr ( $path, strrpos ( $path, '/' ) );
 	</div>
 </nav>
 
-<script src="<?= $path ?>/vendor/cedcoss/yii2-hello/assets/js/jquery-1.11.2.min.js"></script>
-<script src="<?= $path ?>/vendor/cedcoss/yii2-hello/assets/js/bootstrap.min.js"></script>
+<script src="<?= $path ?>assets/js/jquery-1.11.2.min.js"></script>
+<script src="<?= $path ?>assets/js/bootstrap.min.js"></script>
 
