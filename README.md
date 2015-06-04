@@ -1,6 +1,6 @@
-hellobyextension
-================
-This is a test Extension
+Ced-Menu Extension
+======================
+This is a Extension for a flexbile Yii Menu widget with multiple themes
 
 Installation
 ------------
